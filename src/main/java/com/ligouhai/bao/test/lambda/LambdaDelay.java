@@ -1,4 +1,4 @@
-package com.ligouhai.bao.test;
+package com.ligouhai.bao.test.lambda;
 
 import com.ligouhai.bao.service.MessageBuilder;
 
