@@ -184,6 +184,11 @@ public class CompletableFutureTest {
         allOfTest();
     }
 
+    /**
+     * allOf
+     *
+     *  它接收一个可变入参，既可以接收CompletableFuture单个对象，可以接收其数组对象。
+     */
     public static void allOfTest() {
         Long startTime = System.currentTimeMillis();
 
