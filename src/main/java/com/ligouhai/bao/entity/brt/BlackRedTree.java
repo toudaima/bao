@@ -116,11 +116,20 @@ public class BlackRedTree<K extends Comparable<K>, V> {
             } else if (cmp < 0) {
                 x = x.right;
             } else {
-
+                x.setValue(node.getValue());
             }
         }
         if (parent == null) {
             this.root = node;
+        } else {
+            node.setParent(parent);
+            if (node.getKey().compareTo(parent.getKey()) > 0) {
+                parent.setRight(node);
+            } else {
+                parent.setLeft(node);
+            }
         }
+
+        //开始平衡
     }
 }
